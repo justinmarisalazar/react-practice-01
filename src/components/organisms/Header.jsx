@@ -24,11 +24,8 @@ const Header = () => {
   }));
 
   // config
-  const [
-    time,
-    //setTime
-  ] = useState(new Date().toLocaleTimeString());
-  // setInterval(() => setTime(new Date().toLocaleTimeString()), 1000);
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+  setInterval(() => setTime(new Date().toLocaleTimeString()), 1000);
   const date = toCustomDate(new Date());
 
   // render
